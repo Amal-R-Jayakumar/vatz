@@ -107,6 +107,7 @@ const VatReport = (props) => {
 	};
 
 	const getReportName = (item) => {
+		// console.log(moment(item.start_date).format("MMMYYYY"));
 		return "VAT_" + item.company_name + "_" + moment(item.start_date).format("MMMYYYY");
 	};
 
@@ -154,7 +155,7 @@ const VatReport = (props) => {
 		};
 		callApi("post", ApiConstants.vatreports.vatreportforothers, params, true)
 			.then((response) => {
-				console.log(response.payload);
+				// console.log(response.payload);
 				if (response && response.status_code === 200) {
 					let data = response.payload;
 					data.vat_return_due_date = moment(data.vat_return_due_date).add(28, "days").format("YYYY-MM-DD");
@@ -173,8 +174,8 @@ const VatReport = (props) => {
 			});
 	};
 	const onEntrySubmit = (status) => {
-		let params = {...reportsData, status, name: `VAT_${reportsData.name}_${moment(reportsData.start_date).format("MMMYYYY")}`};
-		console.log(params);
+		let params = {...reportsData, status, name: `VAT_${reportsData.name}_${moment(reportsData.vat_return_start_period).format("MMMYYYY")}`};
+		// console.log(params);
 		callApi("post", ApiConstants.vatreports.createvatreport, params, true)
 			.then((response) => {
 				if (response && response.status_code === 201) {

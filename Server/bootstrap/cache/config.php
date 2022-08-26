@@ -182,7 +182,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/framework/cache/data',
+        'path' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -349,12 +349,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/app',
+        'root' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/app/public',
+        'root' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\app/public',
         'url' => 'http://localhost/storage',
         'visibility' => 'public',
       ),
@@ -371,7 +371,7 @@
     ),
     'links' => 
     array (
-      '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/public/storage' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/app/public',
+      'C:\\Users\\Administrator\\Documents\\vatz\\Server\\public\\storage' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\app/public',
     ),
   ),
   'hashing' => 
@@ -441,13 +441,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/logs/laravel.log',
+        'path' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/logs/laravel.log',
+        'path' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -497,7 +497,7 @@
       ),
       'emergency' => 
       array (
-        'path' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/logs/laravel.log',
+        'path' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\logs/laravel.log',
       ),
     ),
   ),
@@ -554,7 +554,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/resources/views/vendor/mail',
+        0 => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\resources\\views/vendor/mail',
       ),
     ),
   ),
@@ -633,7 +633,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/framework/sessions',
+    'files' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -653,9 +653,9 @@
   array (
     'paths' => 
     array (
-      0 => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/resources/views',
+      0 => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\resources\\views',
     ),
-    'compiled' => '/Users/amalrjayakumar/Workspace/Arvension-Technologies-LLP/Projects/amis-inovations/vatz-app-amis-innovations/Server/storage/framework/views',
+    'compiled' => 'C:\\Users\\Administrator\\Documents\\vatz\\Server\\storage\\framework\\views',
   ),
   'flare' => 
   array (

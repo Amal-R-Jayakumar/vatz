@@ -26,8 +26,8 @@ const SignIn = ({ history }) => {
         if (response && response.status_code === 200) {
           setShowLoader(false);
           let userObj = response.payload;
-          sessionStorage.setItem("auth", true);
-          sessionStorage.setItem("user", JSON.stringify(response.payload));
+          localStorage.setItem("auth", true);
+          localStorage.setItem("user", JSON.stringify(response.payload));
           localStorage.setItem("auth", true);
           localStorage.setItem("user", JSON.stringify(response.payload));
           switch (userObj.user_role_id) {

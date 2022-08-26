@@ -25,7 +25,7 @@ const AdminLayout = ({ children }) => {
   });
 
   useEffect(() => {
-    let data = JSON.parse(sessionStorage.user);
+    let data = JSON.parse(localStorage.user);
     user_role_id.current = data?.user_role_id;
 
     if (windowSize.width > 992 && windowSize.width <= 1024 && layout !== "horizontal") {

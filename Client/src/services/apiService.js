@@ -45,7 +45,7 @@ export const callApi = (method, url, params, isAuth) => {
 	const retry = (newToken, resolve, reject) => {
 		let userObj = JSON.parse(localStorage.getItem("user"));
 		userObj.token = newToken;
-		sessionStorage.setItem("user", JSON.stringify(userObj));
+		localStorage.setItem("user", JSON.stringify(userObj));
 		localStorage.setItem("user", JSON.stringify(userObj));
 		axiosConfig.headers.Authorization = `Bearer ${newToken}`;
 		axios(axiosConfig)

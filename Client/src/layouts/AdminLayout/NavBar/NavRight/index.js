@@ -70,8 +70,8 @@ const NavRight = () => {
 	}, []);
 
 	const logout = () => {
-		sessionStorage.removeItem("auth");
-		sessionStorage.removeItem("user");
+		localStorage.removeItem("auth");
+		localStorage.removeItem("user");
 	};
 
 	const handleLogout = async () => {

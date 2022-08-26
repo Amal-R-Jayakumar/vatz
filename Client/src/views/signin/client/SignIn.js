@@ -24,8 +24,8 @@ const SignIn = ({ history, close, openSignup }) => {
       .then((response) => {
         setShowLoader(false);
         if (response && response.status_code === 200) {
-          sessionStorage.setItem("auth", true);
-          sessionStorage.setItem("user", JSON.stringify(response.payload));
+          localStorage.setItem("auth", true);
+          localStorage.setItem("user", JSON.stringify(response.payload));
           localStorage.setItem("auth", true);
           localStorage.setItem("user", JSON.stringify(response.payload));
           history.push("/dashboard");
